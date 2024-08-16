@@ -5,7 +5,22 @@ meta {
 }
 
 get {
-  url: {{tenantBasePath}}/api/v1/member/content/event/list/festival,scheduled-events,sunday-school
+  url: {{tenantBasePath}}/api/v1/member/content/event/list/:topics
   body: none
   auth: none
+}
+
+params:path {
+  topics: festival,scheduled-events,sunday-school
+}
+
+script:post-response {
+  if(res.body.result) {
+    count = res.body.data.length
+    random_index = Math.floor(Math.random() * count) - 1;
+    random_event = res.body.data.at(random_index);
+    bru.setEnvVar('eventUUID', random_event.uuid);
+  } else {
+    console.log(res.body.message);
+  }
 }

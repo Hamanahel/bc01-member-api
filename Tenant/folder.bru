@@ -6,3 +6,12 @@ headers {
   Authorization: Bearer {{sessionToken}}
   Api-Client-Version-UUID: {{apiVersionUUID}}
 }
+
+tests {
+  test("200 Resp", function() {
+    expect(res.getStatus()).to.equal(200);
+  });
+  test("result_true", function() {
+    expect(res.body.result).to.equal(true);
+  });
+}

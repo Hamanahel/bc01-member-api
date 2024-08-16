@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: {{tenantBasePath}}/api/v1/member/content/event/ab974a34-0df1-4f9b-b2f0-625f2d4ac7c9
+  url: {{tenantBasePath}}/api/v1/member/content/event/:event_uuid
   body: none
   auth: none
+}
+
+params:path {
+  event_uuid: {{eventUUID}}
 }
