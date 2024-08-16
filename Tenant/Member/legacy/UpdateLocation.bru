@@ -1,0 +1,17 @@
+meta {
+  name: UpdateLocation
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{tenantBasePath}}/api/v1/legacy/families/148/UpdateLocation
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  FamilyId: 136
+  Longitude: -122.406417
+  Lattitude: 37.785834
+}

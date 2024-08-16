@@ -1,0 +1,18 @@
+meta {
+  name: Auth - Fetch 2FA Options
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{tenantBasePath}}/api/v1/member/auth/2fa/options
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "username": "{{testUsername}}",
+      "password": "{{testPassword}}"
+  }
+}

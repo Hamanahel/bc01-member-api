@@ -1,0 +1,20 @@
+meta {
+  name: Auth - Attempt Authentication
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{tenantBasePath}}/api/v1/member/auth/authenticate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "username": "{{testUsername}}",
+      "password": "{{testPassword}}",
+      "mode": "long_code_01",
+      "otp": ""
+  }
+}

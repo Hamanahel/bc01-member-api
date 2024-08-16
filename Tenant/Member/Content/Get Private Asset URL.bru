@@ -1,0 +1,21 @@
+meta {
+  name: Get Private Asset URL
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{tenantBasePath}}/api/v1/member/content/private_asset_urls
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "paths": [
+          "/path1",
+          "/path2",
+          "/path3"
+      ]
+  }
+}

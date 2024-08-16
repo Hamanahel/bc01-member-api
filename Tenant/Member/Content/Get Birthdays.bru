@@ -1,0 +1,11 @@
+meta {
+  name: Get Birthdays
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{tenantBasePath}}/api/v1/member/content/birthdays/today
+  body: none
+  auth: none
+}

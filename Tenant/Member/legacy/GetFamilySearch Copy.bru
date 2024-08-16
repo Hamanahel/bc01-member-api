@@ -1,0 +1,15 @@
+meta {
+  name: GetFamilySearch Copy
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{tenantBasePath}}/api/v1/legacy/families/3/GenerateOtp
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  userName: 9446466207
+}

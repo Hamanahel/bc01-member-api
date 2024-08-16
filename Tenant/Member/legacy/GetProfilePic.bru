@@ -1,0 +1,16 @@
+meta {
+  name: GetProfilePic
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{tenantBasePath}}/api/v1/legacy/families/3/GetProfilePic
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  personIds: 59
+  personIds: 60
+}

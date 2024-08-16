@@ -1,0 +1,4 @@
+environments/*.bru
+!environments/*.safe.bru
+
+*_ignore/

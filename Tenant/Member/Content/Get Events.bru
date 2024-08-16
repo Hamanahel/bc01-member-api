@@ -1,0 +1,11 @@
+meta {
+  name: Get Events
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{tenantBasePath}}/api/v1/member/content/event/list/festival,scheduled-events,sunday-school
+  body: none
+  auth: none
+}

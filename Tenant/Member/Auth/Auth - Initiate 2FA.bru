@@ -1,0 +1,19 @@
+meta {
+  name: Auth - Initiate 2FA
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{tenantBasePath}}/api/v1/member/auth/2fa/initiate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "username": "{{testUsername}}",
+      "password": "{{testPassword}}",
+      "mode": "long_code_01"
+  }
+}

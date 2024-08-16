@@ -1,0 +1,11 @@
+meta {
+  name: Auth - Logout
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{tenantBasePath}}/api/v1/member/auth/session
+  body: none
+  auth: none
+}
