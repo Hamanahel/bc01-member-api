@@ -1,0 +1,15 @@
+meta {
+  name: Temp upload
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://tmpfiles.org/api/v1/upload
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(/Users/athul/Desktop/Screenshot 2024-09-12 at 5.06.59 PM.png)
+}

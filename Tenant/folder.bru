@@ -14,4 +14,7 @@ tests {
   test("result_true", function() {
     expect(res.body.result).to.equal(true);
   });
+  test("is_json", function() {
+    expect(res.headers['content-type']).to.equal('application/json');
+  });
 }

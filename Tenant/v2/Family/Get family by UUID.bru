@@ -1,0 +1,11 @@
+meta {
+  name: Get family by UUID
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{tenantBasePath}}/api/v2/family/{{familyUUID}}/redirect
+  body: none
+  auth: none
+}

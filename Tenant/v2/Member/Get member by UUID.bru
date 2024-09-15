@@ -1,0 +1,11 @@
+meta {
+  name: Get member by UUID
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{tenantBasePath}}/api/v2/member/{{memberUUID}}/redirect
+  body: none
+  auth: none
+}

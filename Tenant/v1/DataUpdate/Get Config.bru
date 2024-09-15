@@ -1,0 +1,16 @@
+meta {
+  name: Get Config
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{tenantBasePath}}/api/v1/member/update/config/:type/:uuid
+  body: none
+  auth: none
+}
+
+params:path {
+  uuid: 
+  type: Address
+}
