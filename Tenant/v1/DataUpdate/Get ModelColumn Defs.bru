@@ -1,0 +1,16 @@
+meta {
+  name: Get ModelColumn Defs
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{tenantBasePath}}/api/v1/member/update/:type/:uuid
+  body: none
+  auth: none
+}
+
+params:path {
+  uuid: 4d466ff3-796a-4dd2-870e-1a146729c54c
+  type: Member
+}
