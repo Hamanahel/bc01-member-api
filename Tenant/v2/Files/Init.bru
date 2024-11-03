@@ -1,0 +1,19 @@
+meta {
+  name: Init
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{tenantBasePath}}/api/v2/files/init
+  body: none
+  auth: none
+}
+
+script:post-response {
+  if(res.body.result) {
+    bru.setEnvVar('fileUploadURL', res.body.data.put_url);
+  } else {
+    console.log(res.body.message);
+  }
+}

@@ -1,0 +1,25 @@
+meta {
+  name: VIN Check
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://api.mercedes-benz.com/vehicles/W1NDM4EBXRM000125?locale=en_GB&additionalSpecs=true&optionsNullDescription=false&options=true&technicalData=true&payloadNullValues=true
+  body: none
+  auth: none
+}
+
+params:query {
+  locale: en_GB
+  additionalSpecs: true
+  optionsNullDescription: false
+  options: true
+  technicalData: true
+  payloadNullValues: true
+}
+
+headers {
+  Accept: application/json
+  x-api-key: 91ffa272-c853-41ab-9ac0-42f472ae7fc8
+}

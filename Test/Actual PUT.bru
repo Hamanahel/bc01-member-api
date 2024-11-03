@@ -1,0 +1,15 @@
+meta {
+  name: Actual PUT
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{fileUploadURL}}
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(/Users/athul/Desktop/Screenshot 2024-09-23 at 6.30.04 PM.png)
+}
