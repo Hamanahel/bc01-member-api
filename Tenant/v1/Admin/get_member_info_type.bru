@@ -1,0 +1,17 @@
+meta {
+  name: get_member_info_type
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{tenantBasePath}}/api/v1/admin/info/:model/:section_uuid/:entity_uuid
+  body: none
+  auth: none
+}
+
+params:path {
+  entity_uuid: d102128e-2de7-4805-bbeb-2aa48ae03dda
+  section_uuid: 7ba50344-cc06-44ee-8c25-544220eada30
+  model: Member
+}
