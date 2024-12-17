@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: {{tenantBasePath}}/api/v2/advertisement/current/1
+  url: {{tenantBasePath}}/api/v2/advertisement/:uuid
   body: none
   auth: none
+}
+
+params:path {
+  uuid: 
 }
