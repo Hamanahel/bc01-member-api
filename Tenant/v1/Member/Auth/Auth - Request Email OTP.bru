@@ -1,0 +1,17 @@
+meta {
+  name: Auth - Request Email OTP
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{tenantBasePath}}/api/v1/member/auth/2fa/request_otp_email
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "username": "{{testUsername}}"
+  }
+}

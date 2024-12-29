@@ -1,0 +1,16 @@
+meta {
+  name: Get reports for my family
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{tenantBasePath}}/api/v2/family/mine/:member_uuid/:type
+  body: none
+  auth: none
+}
+
+params:path {
+  type: dues
+  member_uuid: 7029948e-2288-421c-a52e-ab9b4850a189
+}
