@@ -1,0 +1,21 @@
+meta {
+  name: Set usernames for my family
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{tenantBasePath}}/api/v2/family/mine/:member_uuid/username/new
+  body: json
+  auth: none
+}
+
+params:path {
+  member_uuid: 7029948e-2288-421c-a52e-ab9b4850a189
+}
+
+body:json {
+  {
+    "username": "dem"
+  }
+}
