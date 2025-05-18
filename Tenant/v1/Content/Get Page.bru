@@ -1,0 +1,15 @@
+meta {
+  name: Get Page
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{tenantBasePath}}/api/v1/content/page/:slug
+  body: none
+  auth: none
+}
+
+params:path {
+  slug: 
+}
